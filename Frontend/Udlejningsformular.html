@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lejning</title>
+    <title>Udlejning</title>
     <link rel="stylesheet" href="Styling.css">
 
 </head>
@@ -22,27 +22,33 @@
 </div>
 
 <!-- #endregion Navbar-->
+
 <div class="title">
     <h1>Bil udlejning</h1>
 </div>
 
-<div class="dropdown">
-    <button class="dropbtn">Bil Type</button>
-    <div class="dropdown-content">
-    <a href="#">Mindre Bil
-        <br>
-        <img src="IMG's/mindrebil.png" alt="">
-    </a>
-    <a href="#">Mellemklasse Bil
-        <br>
-        <img src="IMG's/mellemklassebil.png" alt="">
-    </a>
-    <a href="#">Varevogn
-        <br>
-        <img src="IMG's/varevogn.png" alt="">
-    </a>
+<!--#region bil-valg-->
+    <div class="selection">
+        <label for="biltype">biltype</label>
+        <select name="biltype" id="biltype">
+            <option value=""></option>
+            <option value="mindrebil">mindrebil<img src="IMG's/mindrebil.png" alt=""></option>
+            <option value="mellemklassebil">mellemklassebil<img src="IMG's/mellemklassebil.png" alt=""></option>
+            <option value="varevogn">varevogn<img src="IMG's/varevogn.png" alt=""></option>
+            
+        </select>
+        
     </div>
-  </div>
+<!--#endregion bil-valg-->
+
+
+
+
+
+<div>
+
+
+</div>
 
 </body>
 </html>
