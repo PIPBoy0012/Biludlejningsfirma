@@ -16,3 +16,32 @@ body{
     padding: 0;
     margin: 0;
 }
+
+/*#region Navbar*/
+.navigationbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 98.9vw;
+    overflow: hidden;
+    background-color: var(--background-color);
+    border-radius: 0 0 0.5rem 0.5rem;
+    box-shadow: 0.3rem 0.3rem 0rem rgb(221, 221, 221);
+    border: var(--border);
+}
+.navigationbar li {
+    float: left;
+  }
+
+.navigationbar li a {
+    display: block;
+    color: var(--text-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+.navigationbar li a:hover {
+    background-color: rgb(29, 134, 175);
+}
+/*#endregion Navbar*/
