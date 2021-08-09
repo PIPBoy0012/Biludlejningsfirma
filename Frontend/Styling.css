@@ -12,6 +12,7 @@
 
 *{
     font-size: 1.2rem;
+    color: var(--text-color);
 }
 html{
     background: rgb(121, 121, 121);
@@ -27,9 +28,21 @@ div{
     border: var(--border);
     border-radius: var(--border-Radius);
     box-shadow: var(--box-Shadow);
+    margin: var(--margin);
+    padding: var(--padding);
+}
+
+.plot{
+  margin: 0;
+  padding: 0;
 }
 
 /*#region Navbar*/
+.navigationbar{
+  margin: 0;
+  padding: 0;
+}
+
 .navigationbar ul{
     list-style-type: none;
     margin: 0;
@@ -43,6 +56,7 @@ div{
 }
 .navigationbar li {
     float: left;
+    
   }
 
 .navigationbar li a {
@@ -61,8 +75,6 @@ div{
 /*#region bil-valg*/
 .selection{
   color: var(--text-color);
-  padding: var(--padding);
-  margin: var(--margin);
 
 }
 .selection select{
@@ -84,3 +96,18 @@ div{
     color: var(--text-color);
 }
   /*#endregion title*/
+
+  /*#region bilvalg*/
+.selection{
+  display: inline-block;
+  margin: 0.5rem 0.3rem 0.5rem 1rem;
+}
+.checkboxes{
+  display: inline-block;
+  margin: 0.5rem 0.3rem 0.5rem 0.3rem;
+}
+.checkboxes input{
+  width: 1rem;
+  height: 1rem;
+}
+  /*#endregion bilvalg*/
