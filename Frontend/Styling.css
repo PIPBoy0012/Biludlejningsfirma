@@ -114,6 +114,6 @@ div{
   color: var(--text-color);
   background-color: var(--background-color);
   outline: none;
-  min-width: 8rem;
-}
+  min-width: 8 rem;
+} 
   /*#endregion bilvalg*/
