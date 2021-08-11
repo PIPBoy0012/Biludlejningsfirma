@@ -83,6 +83,7 @@ div{
   color: var(--text-color);
   background-color: var(--background-color);
   outline: none;
+  min-width: 10rem;
 }
   /*#endregion bil-valg*/
 
@@ -113,5 +114,6 @@ div{
   color: var(--text-color);
   background-color: var(--background-color);
   outline: none;
+  min-width: 8rem;
 }
   /*#endregion bilvalg*/
