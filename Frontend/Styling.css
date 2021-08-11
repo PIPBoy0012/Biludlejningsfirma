@@ -75,6 +75,8 @@ div{
 /*#region bil-valg*/
 .selection{
   color: var(--text-color);
+  display: inline-block;
+  margin: 0.5rem 0.3rem 0.5rem 1rem;
 
 }
 .selection select{
@@ -98,10 +100,6 @@ div{
   /*#endregion title*/
 
   /*#region bilvalg*/
-.selection{
-  display: inline-block;
-  margin: 0.5rem 0.3rem 0.5rem 1rem;
-}
 .checkboxes{
   display: inline-block;
   margin: 0.5rem 0.3rem 0.5rem 0.3rem;
@@ -109,5 +107,11 @@ div{
 .checkboxes input{
   width: 1rem;
   height: 1rem;
+}
+
+.checkboxes select{
+  color: var(--text-color);
+  background-color: var(--background-color);
+  outline: none;
 }
   /*#endregion bilvalg*/
