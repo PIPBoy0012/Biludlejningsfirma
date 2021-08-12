@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Udlejning</title>
     <link rel="stylesheet" href="Styling.css">
+    <script src="Scripts.js"></script>
 
 </head>
 <body>
@@ -35,7 +36,6 @@
             <option value="mindrebil">mindrebil<img src="IMG's/mindrebil.png" alt=""></option>
             <option value="mellemklassebil">mellemklassebil<img src="IMG's/mellemklassebil.png" alt=""></option>
             <option value="varevogn">varevogn<img src="IMG's/varevogn.png" alt=""></option>
-            
         </select>
     </div>
 
@@ -47,7 +47,7 @@
             <option value="Fiat">Fiat<img src="IMG's/mellemklassebil.png" alt=""></option>
             <option value="Tesla">Tesla<img src="IMG's/varevogn.png" alt=""></option>
         </select>
-        </div>
+    </div>
 
     <div class="checkboxes">
         <label for="bilmodel">bilmodel</label>
@@ -55,20 +55,23 @@
             <option value=""></option>
             <option value="Audi r8">Audi r8<img src="IMG's/mindrebil.png" alt=""></option>
             <option value="fiat 500">fiat 500<img src="IMG's/mellemklassebil.png" alt=""></option>
-            <option value="model s">model s<img src="IMG's/varevogn.png" alt="">varevogn</option>
+            <option value="model s">model s<img src="IMG's/varevogn.png" alt=""></option>
         </select>
-        </div>
+    </div>
 
-        <div class="checkboxes">
-            <label for="GPScheck">GPS</label>
-            <input type="checkbox" id="GPScheck">
+    <div class="checkboxes">
+        <label for="GPScheck">GPS</label>
+        <input type="checkbox" id="GPScheck">
+    </div>
 
-        </div>
-        <div class="checkboxes">
-            <label for="Saedecheck">Barnesæde</label>
-            <input type="checkbox" id="Saedecheck">
-
-        </div>
+    <div class="checkboxes">
+        <label for="Saedecheck">Barnesæde</label>
+        <input type="checkbox" id="Saedecheck">
+    </div>
+    <br>
+    <button onclick='Showtext()  '>test</button>
+    <br>
+    <p id="test">Hej</p>
 
 <!--#endregion bil-valg-->
 
