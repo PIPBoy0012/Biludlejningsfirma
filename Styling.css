@@ -133,3 +133,7 @@ div{
   .maindiv h1{
     font-size: 2rem;
   }
+
+  .range {
+    width: 10rem;
+  }
