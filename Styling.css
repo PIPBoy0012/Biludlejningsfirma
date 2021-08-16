@@ -90,13 +90,13 @@ div{
   /*#region title*/
 .title{
     margin: var(--margin);
-    align-content: center;
-    display: flex;
+    text-align: center;
 }
 
 .title h1{
     padding: var(--padding);
-    color: var(--text-color);
+    color: var(--text-color);  
+    font-size: 2rem;
 }
   /*#endregion title*/
 
@@ -116,4 +116,20 @@ div{
   outline: none;
   min-width: 8 rem;
 } 
+.dates{
+  display: inline-block;
+}
+
+.dates input{
+  background-color: var(--background-color);
+}
+
   /*#endregion bilvalg*/
+
+  .maindiv{
+    margin: 7rem 10rem 1rem 10rem;
+    text-align: center;
+  }
+  .maindiv h1{
+    font-size: 2rem;
+  }
