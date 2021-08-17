@@ -38,6 +38,7 @@ div{
 }
 
 /*#region Navbar*/
+
 .navigationbar{
   margin: 0;
   padding: 0;
@@ -70,9 +71,11 @@ div{
 .navigationbar li a:hover {
     background-color: var(--hover-color);
 }
+
 /*#endregion Navbar*/
 
 /*#region bil-valg*/
+
 .selection{
   color: var(--text-color);
   display: inline-block;
@@ -85,9 +88,11 @@ div{
   outline: none;
   min-width: 10rem;
 }
+
   /*#endregion bil-valg*/
 
   /*#region title*/
+
 .title{
     margin: var(--margin);
     text-align: center;
@@ -98,9 +103,11 @@ div{
     color: var(--text-color);  
     font-size: 2rem;
 }
+
   /*#endregion title*/
 
   /*#region bilvalg*/
+
 .checkboxes{
   display: inline-block;
   margin: 0.5rem 0.3rem 0.5rem 0.3rem;
@@ -114,7 +121,7 @@ div{
   color: var(--text-color);
   background-color: var(--background-color);
   outline: none;
-  min-width: 8 rem;
+  min-width: 8rem;
 } 
 .dates{
   display: inline-block;
