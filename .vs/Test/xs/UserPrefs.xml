@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{4CE7A5AB-4E7E-43D6-80C9-A5A5941DD5A7}|Default">
+  <MonoDevelop.Ide.ItemProperties.Test PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Test/Model/DataManager/UserManager.cs">
+    <Files>
+      <File FileName="Test/Startup.cs" Line="47" Column="80" IsPinned="True" />
+      <File FileName="Test/Model/DataManager/UserManager.cs" Line="1" Column="1" />
+      <File FileName="Test/Controllers/UserController.cs" Line="81" Column="29" />
+      <File FileName="Test/Model/DataManager/OrderManager.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Test" expanded="True">
+            <Node name="Test" expanded="True">
+              <Node name="Context" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="DataManager" expanded="True">
+                  <Node name="UserManager.cs" selected="True" />
+                </Node>
+                <Node name="Repository" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
