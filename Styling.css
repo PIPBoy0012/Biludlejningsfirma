@@ -8,6 +8,7 @@
     --border-Radius: 0.5rem;
     --padding: 14px 16px;
     --margin: 0.5rem 1rem 0.5rem 1rem; 
+    --placeholder-color:rgb(221, 221, 221);
     }
 
 *{
@@ -35,6 +36,8 @@ div{
 .plot{
   margin: 0;
   padding: 0;
+  box-shadow: none;
+  background: none;
 }
 
 /*#region Navbar*/
@@ -70,6 +73,18 @@ div{
 
 .navigationbar li a:hover {
     background-color: var(--hover-color);
+}
+
+.navigationbar input{
+  float: right;
+  height: 5vh;
+  background: var(--background-color);
+  border: none;
+  outline: none;
+}
+
+.navigationbar ::placeholder{
+  color: var(--placeholder-color);
 }
 
 /*#endregion Navbar*/
@@ -144,3 +159,32 @@ div{
   .range {
     width: 10rem;
   }
+
+  /*#region Searchbar*/
+.input-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width: 25rem;
+  background-color: var(--background-color);
+  padding: 0.5rem;
+  margin: var(--margin);
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  box-shadow: var(--box-Shadow);
+  border: var(--border);
+}
+
+.input-wrapper input{
+  border: none;
+  outline: none;
+  margin: 0 0.5rem 0 0.5rem;
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.input-wrapper ::placeholder{
+  color: var(--placeholder-color);
+}
+/*#endregion Searchbar*/
