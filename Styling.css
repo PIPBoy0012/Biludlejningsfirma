@@ -33,6 +33,7 @@ div{
     padding: var(--padding);
 }
 
+
 .plot{
   margin: 0;
   padding: 0;
@@ -188,3 +189,27 @@ div{
   color: var(--placeholder-color);
 }
 /*#endregion Searchbar*/
+
+.input-wrapper-registrering{
+  background-color: var(--background-color);
+  padding: 0.5rem;
+  margin: var(--margin);
+  border-radius: 0.5rem;
+  color: var(--text-color);
+  box-shadow: var(--box-Shadow);
+  border: var(--border);
+  display: inline-block;
+}
+
+.input-wrapper-registrering input{
+  border: none;
+  outline: none;
+  margin: 0 0.5rem 0 0.5rem;
+  
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.input-wrapper-registrering ::placeholder{
+  color: var(--placeholder-color);
+}
