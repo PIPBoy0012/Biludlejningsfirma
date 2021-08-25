@@ -19,5 +19,6 @@ namespace Test.Model
         public int UserGroup { get; set; }
 
         public virtual ICollection<Order> Orders { get; set; }
+
     }
 }

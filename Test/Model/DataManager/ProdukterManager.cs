@@ -7,7 +7,7 @@ using Test.Model.Repository;
 
 namespace Test.Model.DataManager
 {
-    public class ProdukterManager : IDataRepository<Produkter>
+    public class ProdukterManager : IProdukterRepository<Produkter>
     {
         readonly bilbixContext _produkterContext;
 
@@ -24,6 +24,13 @@ namespace Test.Model.DataManager
         public Produkter Get(long id)
         {
             return _produkterContext.Produkters.FirstOrDefault(e => e.ProduktId == id);
+        }
+
+        public IEnumerable<Produkter> GetType(string type)
+        {
+            List<Produkter> produktWithType = _produkterContext.Produkters.Where(e => e.Type == type).ToList();
+
+            return produktWithType;
         }
 
         public void Add(Produkter produkter)

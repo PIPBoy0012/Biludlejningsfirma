@@ -28,6 +28,9 @@ namespace Test
 
         public IConfiguration Configuration { get; }
 
+        private readonly string _policyName = "CorsPolicy";
+
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
@@ -44,9 +47,20 @@ namespace Test
 
             services.AddScoped<IDataRepository<User>, UserManager>();
             services.AddScoped<IDataRepository<Order>, OrderManager>();
-            services.AddScoped<IDataRepository<Produkter>, ProdukterManager>();
+            //services.AddScoped<IDataRepository<Produkter>, ProdukterManager>();
+            services.AddScoped<IProdukterRepository<Produkter>, ProdukterManager>();
             services.AddScoped<IDataRepository<OrderLine>, OrderLineManager>();
             services.AddControllers();
+
+            services.AddCors(opt =>
+            {
+                opt.AddPolicy(name: _policyName, builder =>
+                {
+                    builder.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
+                });
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -62,6 +76,8 @@ namespace Test
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors(_policyName);
 
             app.UseEndpoints(endpoints =>
             {

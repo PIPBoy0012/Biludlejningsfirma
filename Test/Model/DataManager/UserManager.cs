@@ -11,7 +11,7 @@ namespace Test.Model.DataManager
     {
         readonly bilbixContext _userContext;
 
-        public UserManager(bilbixContext userContext)
+        public UserManager(bilbixContext userContext, bilbixContext orderContext)
         {
             _userContext = userContext;
         }

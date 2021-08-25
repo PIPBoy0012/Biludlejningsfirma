@@ -17,6 +17,7 @@
     <None Remove="Model\DataManager\" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.WebApi.Cors" Version="5.2.7" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.9" />
@@ -31,7 +32,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Context\" />
-    <Folder Include="Model\Repository\" />
     <Folder Include="Model\DataManager\" />
   </ItemGroup>
 </Project>
